@@ -1,0 +1,75 @@
+.swiper {
+    width: 600px;
+    height: 300px;
+    padding-bottom: 2rem;
+  }
+  
+  .swiper-slide img {
+    height: 300px;
+    width: 200px;
+    max-width: 100%;
+    object-fit: cover;
+  }
+  
+  .swiper-scrollbar {
+    margin-top: 3rem;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  /* Ignore everything below */
+  
+  
+  
+  body {
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    font-family: sans-serif;
+    justify-content: center;
+    padding: 30px;
+  }
+  
+  .docs {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0.25rem;
+  }
+  
+  .button {
+    transition: background 300ms, color 300ms, box-shadow 300ms;
+    background: #F7F7F7;
+    font-size: 15px;
+    color: #555555;
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 15px 30px;
+    cursor: pointer;
+    border-radius: 2px;
+    margin-bottom: 0.25rem;
+  }
+  
+  .button:hover {
+    background: transparent;
+    box-shadow: 0px 0px 0px 1px inset;
+  }
+  
+  .button > i {
+    padding-left: 1rem;
+  }

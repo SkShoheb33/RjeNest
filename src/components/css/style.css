@@ -1,0 +1,293 @@
+.a:hover .b {
+    display: flex !important;
+}
+
+.b {
+    display: none !important;
+    /* background-color: #1e3a8a !important; */
+    background: rgba(0, 0, 0, 0.8) !important;
+    color: white !important;
+}
+.b .flex{
+  color: white;
+  text-decoration: none;
+}
+.b:hover {
+    display: flex !important;
+    
+}
+
+.b .flex:hover{
+  color: black;
+}
+
+.c{
+  color: black;
+  text-decoration: none;
+}
+
+.c:hover {
+    border-bottom: 2px solid #004aad;
+  
+}
+
+body {
+    /* font-family: 'Bricolage Grotesque', sans-serif; */
+    /* font-family: 'Cedarville Cursive', cursive; */
+    /* font-family: 'Poppins', sans-serif; */
+    /* font-family: 'Bricolage Grotesque', sans-serif; */
+    /* font-family: 'Cedarville Cursive', cursive; */
+    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Poppins', sans-serif; */
+    /* font-family: 'Roboto', sans-serif; */
+    /* font-family: 'Roboto', sans-serif; */
+}
+
+#navbar{
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+#listItems {
+    transition: 30s ease-in-out;
+}
+
+.navInnerItems:hover {
+    color: #1e3a8a !important;
+    background: white;
+}
+.cancle:hover {
+  background-color: rgba(128, 128, 128, 0.424) !important;
+  
+}
+
+#aboutItems,
+#programmesItems,
+#carriersItems {
+    display: none;
+}
+
+.logo {
+    background-image: url('../../assets/logo.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+*::-webkit-scrollbar{
+  scroll-behavior: smooth;
+  display: none;
+}
+.scroll-bar-remove::-webkit-scrollbar {
+    display: none;
+    scroll-behavior: smooth;
+}
+
+.scroll-bar-remove {
+    overflow-x: hidden;
+}
+
+button {
+    border: 1px solid black;
+}
+
+button:hover {
+    background: #fff !important;
+    color: black !important;
+    font-weight: bold;
+}
+
+.events {
+    background-image: url('../../assets/event1.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.card {
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+}
+
+.viewbtn {
+    border: 1px solid transparent;
+}
+
+.viewbtn:hover {
+    background: #fff !important;
+    color: black !important;
+    font-weight: bold;
+    border: 1px solid black;
+}
+
+.card:hover .time {
+    display: flex;
+}
+
+#c1 {
+    background: linear-gradient(to right, #004aad, #cb6ce6);
+}
+
+#c2 {
+  background: linear-gradient(to right, #34e89e, #0f3443);
+}
+
+#c3 {
+  background: linear-gradient(to right, #FDC830, #F37335);
+}
+
+#logo-name {
+    animation: changelogo 5000ms infinite linear;
+}
+
+@keyframes changelogo {
+    0% {
+        opacity: 0;
+    }
+    30%,
+    60% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+
+.loader {
+    transform: rotateZ(45deg);
+    perspective: 1000px;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    color: #fff;
+  }
+    .loader:before,
+    .loader:after {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: inherit;
+      height: inherit;
+      border-radius: 50%;
+      transform: rotateX(70deg);
+      animation: 0.75s spin linear infinite;
+    }
+    .loader:after {
+      color: #FF3D00;
+      transform: rotateY(70deg);
+      animation-delay: .4s;
+    }
+
+  @keyframes rotate {
+    0% {
+      transform: translate(-50%, -50%) rotateZ(0deg);
+    }
+    100% {
+      transform: translate(-50%, -50%) rotateZ(360deg);
+    }
+  }
+
+  @keyframes rotateccw {
+    0% {
+      transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+      transform: translate(-50%, -50%) rotate(-360deg);
+    }
+  }
+
+  @keyframes spin {
+    0%,
+    100% {
+      box-shadow: .2em 0px 0 0px currentcolor;
+    }
+    12% {
+      box-shadow: .2em .2em 0 0 currentcolor;
+    }
+    25% {
+      box-shadow: 0 .2em 0 0px currentcolor;
+    }
+    37% {
+      box-shadow: -.2em .2em 0 0 currentcolor;
+    }
+    50% {
+      box-shadow: -.2em 0 0 0 currentcolor;
+    }
+    62% {
+      box-shadow: -.2em -.2em 0 0 currentcolor;
+    }
+    75% {
+      box-shadow: 0px -.2em 0 0 currentcolor;
+    }
+    87% {
+      box-shadow: .2em -.2em 0 0 currentcolor;
+    }
+  }
+.loading-page{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    z-index: 100 !important;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+
+
+#boxes{
+  position: relative;
+  width: 100%;
+  height: 70vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  /* background-image: url('https://img.freepik.com/premium-photo/blue-screen-that-has-light-blue-background-that-says-blue_1340-34847.jpg'); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation: changeBg 240s alternate infinite;
+  background-position: center;
+}
+@keyframes changeBg {
+  0% {background-color: rgb(255, 122, 122);}
+  50% {background-color: rgb(122, 255, 122);}
+  100% {background-color: rgb(122, 122, 255);}
+}
+
+.box{
+  position: absolute;
+  background-color: transparent;
+  border-radius: 50%;
+  box-shadow: 20px 20px 60px #00000040 ,inset -20px -20px 60px #00000040 ;
+  animation: goTop  infinite linear alternate;
+  filter: blur(3px);
+  
+}
+#boxes h1{
+  font-size: 60px;
+  z-index: 2;
+  font-weight: bold;
+}
+@keyframes goTop {
+  
+  100%{
+      top:0;
+  }
+}
+
+Link{
+  text-decoration: none !important;
+}
+
+
+.blue-gradient{
+  background: linear-gradient(90deg,#0f0c29,#302b63,#24243e);
+}
+
+
+
