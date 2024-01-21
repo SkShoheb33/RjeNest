@@ -3,10 +3,12 @@ import img1 from '../assets/cyberSpark/img1.jpg'
 import img2 from '../assets/cyberSpark/img2.jpg'
 import img3 from '../assets/cyberSpark/img3.jpg'
 import img4 from '../assets/cyberSpark/img4.jpg'
+import PhotoSlider from '../components/PhotoSlider'
 export default function CyberSpark() {
-    let img = [img1,img2,img3,img4]
+    let imgs = [img1,img2,img3,img4]
   return (
     <div className="flex leading-10 flex-col w-full md:w-2/3 px-2 mx-auto">
+            
             <div className=" md:text-2xl text-xl font-extrabold my-4 text-center ">CYBER SPARK-INCUBATION CENTRE</div>
 
             <div className="text-xl md:text-xl my-2 text-center font-semibold">Department of Computer Science and Engineering</div>
@@ -30,15 +32,7 @@ during the process, and provide them with the required support.
             </ol>
             <div className="text-4xl my-2 text-center font-bold">Gallery</div>
             <div className="grid grid-cols-2 w-full gap-5 my-4">
-                {img.map((i,index)=>{
-                    return (
-                        <div key={index} className="flex w-2/3 border-2 mx-auto">
-                            <img src={i} alt=""/>
-                        </div>
-                    )
-                })}
-                
-                
+                <PhotoSlider imgs={imgs}/>                
             </div>
             
         </div>

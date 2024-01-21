@@ -26,7 +26,7 @@ function AddValues() {
   return (
     <div className="flex flex-col p-8 items-center gap-6 w-full ">
         <div className='text-2xl font-bold'>
-            How Rj E-Nest Adds Value
+            How RJ E-Nest Adds Value
         </div>
         <div className='flex flex-wrap gap-2 justify-center '>
             {

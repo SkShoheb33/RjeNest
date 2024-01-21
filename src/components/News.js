@@ -16,8 +16,8 @@ function News() {
         "All the students who have intrest in coding can particiapate the codethon in HT block."
     ]
   return (
-    <div className="flex flex-col blue-gradient w-full  gap-6 text-white p-8 md:p-12">
-        <div className='text-center text-2xl font-bold'>
+    <div className="flex flex-col blue-gradient w-full  gap-6 text-white p-8 md:p-12 md:pb-16">
+        <div className='text-center text-3xl font-bold'>
             News Board
         </div>
         <div className='flex justify-between items-center'>
