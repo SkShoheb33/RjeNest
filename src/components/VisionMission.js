@@ -7,7 +7,7 @@ function VisionMission() {
         Aos.init();
     },[]);
   return (
-    <div className="flex blue-gradient gap-6  md:gap-8 p-12 w-full flex-col text-white items-center justify-center">
+    <div className="flex blue-gradient gap-6  md:gap-9 p-12 md:pb-15 w-full flex-col text-white items-center justify-center">
         <div className='w-full flex justify-start md:justify-center gap-8 md:gap-8 md:w-3/4 flex-col md:flex-row'>
             <div className='md:w-1/3'>
                 <div className='md:text-right text-lg md:text-3xl font-bold '>Vision</div>
