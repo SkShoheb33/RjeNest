@@ -1,13 +1,28 @@
 import React from 'react'
-
+import img1 from '../assets/about/img1.jpg'
+import img4 from '../assets/about/img4.jpg'
+import img3 from '../assets/about/img3.jpg'
 function About() {
+  let imgs = [img1,img4,img3];
   return (
-    <div className='p-8 flex flex-col justify-center items-center w-4/5 mx-auto'>
-        <div className='text-xl md:text-2xl font-bold text-center my-1'>About</div>
-        <div className='flex flex-col gap-4 md:flex-row  justify-center'>
-            <div className='w-full md:w-1/2 flex items-end justify-end '><iframe className='w-[80%] h-[100%]' src="https://www.youtube.com/embed/-2PlexPaGW8?si=7Owb6WzWopti-5DW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
-            <div className='text-md w-full md:w-1/2 text-justify'> RJNEST envisions the creation of an all-encompassing and empowering resource platform for emerging entrepreneurs across diverse realms of science and technology. Its mission is to elevate and intensify the incubation endeavors and knowledge-driven entrepreneurial initiatives at UoH, fostering the development of a dynamic entrepreneurial ecosystem on the campus. Presently, RJNEST<span className='text-gray-400'>... Read more</span></div>
-        </div>  
+    <div className='flex flex-col my-6 w-[100%]'>
+      <div className='text-md md:text-4xl font-bold text-center my-4'>
+        About RJ E-Nest
+      </div>
+      <div className='flex justify-center gap-6'>
+        {
+          imgs.map((img,index)=>
+          <div className='flex gap-4 flex-col w-1/5 p-2 card'>
+              <img className='aspect-auto' src={img} alt='img'/>
+              <div className=''>For development of Technology and Science  based prototype/products- a min Rs. 2.00 lakhs to max. upto
+                Rs.10 lakhs can be supported with ignition grant      Applicants can be individual innovators or early-stage
+                startups.
+            </div>
+        </div>)
+        }
+        
+        
+      </div>
     </div>
   )
 }

@@ -12,7 +12,7 @@ function Events() {
             <div className="flex w-4/5 gap-2 flex-col md:flex-row">
                 {events.map((event,index)=><Event key={index} event = {event}/>)}
             </div>
-            <div className="flex bg-[#001f59] viewbtn hover:cursor-pointer md:my-7 p-2 text-white rounded-sm">View all</div>
+            <div className="flex blue-gradient viewbtn hover:cursor-pointer md:my-7 px-2 py-1 text-white rounded-md">View all</div>
     </div>
   )
 }

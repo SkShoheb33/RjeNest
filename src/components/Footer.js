@@ -4,7 +4,7 @@ import {faFacebook, faInstagram, faLinkedin, faXTwitter, faYoutube} from '@forta
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 function Footer() {
   return (
-    <div className='bg-black text-white flex flex-col items-center py-8'>
+    <div className='black-gradient text-white flex flex-col items-center py-8'>
         <div className='flex md:flex-row flex-col w-full px-5 md:w-3/4'>
             <div className='hidden md:block w-full md:w-1/3 logo '></div>
             <div className='w-full md:w-1/3 flex gap-3 flex-col'>

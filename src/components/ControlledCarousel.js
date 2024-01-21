@@ -8,7 +8,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 function ControlledCarousel() {
   return (
-    <Carousel className=''>
+    <Carousel className='w-[100%]'>
       <Carousel.Item>
         <img src={c1} alt="First slide" />
        

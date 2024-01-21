@@ -60,17 +60,17 @@ function Navbar() {
     }
 
   return (
-    <div id="navbar" className=" sticky top-0 z-10 bg-white flex justify-between md:justify-start w-full h-[10vh] items-center">
+    <div id="navbar" className="sticky top-0 z-10 bg-white flex justify-between md:justify-start w-full h-[12vh] items-center">
         <Link to="/" className=" flex items-center   md:mx-4 w-3/4 md:w-1/3 no-underline">
-        
             <div className="logo mx-2 w-[50px] h-[50px]  md:w-[65px] md:h-[65px]"></div>
             <div className="font-bold text-[8px] mx-1  md:text-[13px] no-underline  text-black">
-                <div className=''>
-                    R.V.R & J.C <br/> ENTERPRISE NEST
+                <div className='my-2 text-lg md:text-xl text-justify text-[#002A66] '>
+                    <div className='text-3xl md:text-3xl'>R.V.R. & J.C.</div>  <div className=' text-[#FFCD00]'>ENTERPRISE NEST</div>
                 </div>
             </div>
         </Link>
-        <div className="hidden text-sm items-center h-full md:flex flex-row w-1/2 font-semibold  justify-between">
+        {/*laptop view*/}
+        <div className="hidden text-sm items-center h-full md:flex flex-row w-2/3 font-semibold  justify-between">
             <Link to="/" className=" c  flex flex-col items-center w-1/6 justify-center hover:font-bold hover:cursor-pointer">
                 HOME
             </Link>
@@ -80,7 +80,7 @@ function Navbar() {
                 </div>
                 <div className="b flex  absolute top-[10vh] w-[200px] p-3 rounded-sm text-sm flex-col font-normal bg-white">
                     <Link to="/programmes/rjenesstincubation" className="flex p-1 flex-col hover:cursor-pointer hover:bg-white hover:text-black rounded-sm hover:font-bold">
-                        RJIT Incubation
+                        RjeNest Incubation
                     </Link>
                     <Link to="/programmes/cyberspark" className="flex p-1 flex-col hover:cursor-pointer hover:bg-white hover:text-black rounded-sm hover:font-bold">
                         Cyber spark
@@ -102,7 +102,7 @@ function Navbar() {
                 </div>
                 <div className="b flex  absolute top-[10vh] w-[200px] p-3 rounded-sm text-sm flex-col font-normal bg-white">
                     <Link to="/about" className="flex p-1 flex-col hover:cursor-pointer hover:bg-white hover:text-black rounded-sm hover:font-bold">
-                        About RJIT
+                        About RjeNest
                     </Link>
                     <Link to="/about/directors" className="flex p-1 flex-col hover:cursor-pointer hover:bg-white hover:text-black rounded-sm hover:font-bold">
                         Board of Directors
@@ -124,10 +124,10 @@ function Navbar() {
                 </div>
                 <div className="b flex absolute top-[10vh] w-[200px] p-3 rounded-sm text-sm flex-col font-normal bg-white">
                     <Link to="/carriers" className="flex p-1 flex-col hover:cursor-pointer hover:bg-white hover:text-black rounded-sm hover:font-bold">
-                        Carriers at RJIT
+                        Carriers at RjeNest
                     </Link>
                     <Link to="/carriers" className="flex p-1 flex-col hover:cursor-pointer  hover:bg-white hover:text-black rounded-sm hover:font-bold">
-                        Carriers at RJIT Startups
+                        Carriers at RjeNest Startups
                     </Link>
 
                 </div>
@@ -138,7 +138,11 @@ function Navbar() {
             <Link to="/connect" className="flex c   flex-col items-center w-1/6 justify-center hover:font-bold hover:cursor-pointer">
                 CONNECT
             </Link>
+            <div className='w-1/6'>
+                <img className='w-1/2' src='https://pbs.twimg.com/profile_images/1379267817917194242/0li1iGtn_400x400.jpg' alt=''/>
+            </div>
         </div>
+        {/*phone view*/}
         <div className="md:hidden mx-8 relative">
             <div className=" flex flex-col text-xl ">
                 <FontAwesomeIcon id='toggle' icon={faBars}/>
@@ -148,7 +152,7 @@ function Navbar() {
                         <div className="flex flex-col w-full ">
                             <div id="about">ABOUT</div>
                             <div id="aboutItems" className="flex flex-col leading-loose mt-3 w-full ">
-                                <Link onClick={closeToggle} to="/about" className="navInnerItems tracking-widest bg-blue-900 text-white rounded-sm w-full px-2 py-1">About RJIT</Link>
+                                <Link onClick={closeToggle} to="/about" className="navInnerItems tracking-widest bg-blue-900 text-white rounded-sm w-full px-2 py-1">About RjeNest</Link>
                                 <Link onClick={closeToggle} to="/about/directors" className="navInnerItems tracking-widest bg-blue-900 text-white rounded-sm w-full px-2 py-1">Board Of Directors</Link>
                                 <Link onClick={closeToggle} to="/about/teams" className="navInnerItems tracking-widest bg-blue-900 text-white rounded-sm w-full px-2 py-1">Team</Link>
                                 <Link onClick={closeToggle} to="/about/guidelines" className="navInnerItems tracking-widest bg-blue-900 text-white rounded-sm w-full px-2 py-1">Guidelines</Link>
@@ -161,7 +165,7 @@ function Navbar() {
                         <div className="flex flex-col w-full ">
                             <div id="programmes">PROGRAMMES</div>
                             <div id="programmesItems" className="flex flex-col leading-loose mt-3 w-full ">
-                                <Link onClick={closeToggle} to="/programmes/rjenesstincubation" className="navInnerItems tracking-widest bg-blue-900 text-white rounded-sm w-full px-2 py-1">RJIT Incubation</Link>
+                                <Link onClick={closeToggle} to="/programmes/rjenesstincubation" className="navInnerItems tracking-widest bg-blue-900 text-white rounded-sm w-full px-2 py-1">RjeNest Incubation</Link>
                                 <Link onClick={closeToggle} to="/programmes/cyberspark" className="navInnerItems tracking-widest bg-blue-900 text-white rounded-sm w-full px-2 py-1">Cyber Spark</Link>
                                 <Link onClick={closeToggle} to="/programmes/itknowledgepark" className="navInnerItems tracking-widest bg-blue-900 text-white rounded-sm w-full px-2 py-1">IT Knowledge Park</Link>
                                 <Link onClick={closeToggle} to="/programmes/buildindia2023" className="navInnerItems tracking-widest bg-blue-900 text-white rounded-sm w-full px-2 py-1">Build India 2023</Link>
@@ -174,8 +178,8 @@ function Navbar() {
                         <div className="flex flex-col w-full ">
                             <div id="carriers">CARRIERS</div>
                             <div id="carriersItems" className="flex flex-col leading-loose mt-3 w-full ">
-                                <Link onClick={closeToggle} to="/carriers" className="navInnerItems tracking-widest bg-blue-900 text-white rounded-sm w-full px-2 py-1">Carriers at RJIT</Link>
-                                <Link onClick={closeToggle} to="/carriers" className="navInnerItems tracking-widest bg-blue-900 text-white rounded-sm w-full px-2 py-1">Carriers at RJIT Startups</Link>
+                                <Link onClick={closeToggle} to="/carriers" className="navInnerItems tracking-widest bg-blue-900 text-white rounded-sm w-full px-2 py-1">Carriers at RjeNest</Link>
+                                <Link onClick={closeToggle} to="/carriers" className="navInnerItems tracking-widest bg-blue-900 text-white rounded-sm w-full px-2 py-1">Carriers at RjeNest Startups</Link>
                             </div>
                         </div>
                         <i className="fa-solid fa-caret-down"></i>

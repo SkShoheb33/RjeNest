@@ -30,10 +30,10 @@ import CreateEvent from './pages/Admin/CreateEvent'
 import Events from './pages/Admin/Events'
 import CreateNews from './pages/Admin/CreateNews'
 import News from './pages/Admin/News'
+import Login from './pages/Admin/login'
 
 function App() {
   let pathname = window.location.pathname.split('/')[1];
-  console.log( window.location.pathname.split('/'))
   return (
     <div>
       {pathname!=='admin' && <Navbar/>}
@@ -55,7 +55,8 @@ function App() {
         <Route path='/newidea' element={<NewIdea/>}></Route>
         <Route path='/connect' element={<Contact/>}></Route>
         <Route path='/admin' element={<Admin/>}>
-          <Route index path='dashboard' element={<Dashboard/>}/>
+          <Route path='' element={<Login/>}/>
+          <Route path='dashboard' element={<Dashboard/>}/>
           <Route path='studentIdeas' element={<StudentIdeas/>}/>
           <Route path='studentQueries' element={<StudentQueries/>}/>
           <Route path='events' element={<AdminEvents/>}>
