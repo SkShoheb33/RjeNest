@@ -31,7 +31,7 @@ during the process, and provide them with the required support.
                 <li className="">Uninterrupted power supply system.</li>
             </ol>
             <div className="text-4xl my-2 text-center font-bold">Gallery</div>
-            <div className="grid grid-cols-2 w-full gap-5 my-4">
+            <div className=" w-auto gap-5 flex justify-center items-center">
                 <PhotoSlider imgs={imgs}/>                
             </div>
             

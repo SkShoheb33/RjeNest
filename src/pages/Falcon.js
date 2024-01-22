@@ -8,6 +8,7 @@ import img6 from '../assets/falcon/img6.png'
 import img7 from '../assets/falcon/img7.png'
 import img8 from '../assets/falcon/img8.png'
 import img9 from '../assets/falcon/img9.png'
+import PhotoSlider from '../components/PhotoSlider'
 function Falcon() {
   let img = [img1,img2,img3,img4,img5,img6,img7,img8,img9];
   return (
@@ -38,13 +39,8 @@ products.
                 <li className="">Evaluation and optimization of process parameters for agitation in concrete mixing.</li>
             </ol>
             <div className="text-4xl my-2 text-center font-bold">Gallary</div>
-            <div className="grid grid-cols-2 w-full gap-5 my-4">
-            {img.map((i,index)=>{return (
-              <div key={index} className="flex w-2/3 border-2 mx-auto">
-                  <img src={i} alt=""/>
-              </div>
-            )})}
-                
+            <div className=" w-auto gap-5 flex justify-center items-center">
+                <PhotoSlider imgs={img}/>                
             </div>
             
         </div>
