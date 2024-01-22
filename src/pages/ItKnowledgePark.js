@@ -7,6 +7,7 @@ import img5 from '../assets/itKowledgePark/img5.png'
 import img6 from '../assets/itKowledgePark/img6.png'
 import img7 from '../assets/itKowledgePark/img7.png'
 import img8 from '../assets/itKowledgePark/img8.png'
+import PhotoSlider from '../components/PhotoSlider'
 function ItKnowledgePark() {
   let img = [img1,img2,img3,img4,img5,img6,img7,img8];
   return (
@@ -33,12 +34,8 @@ during the process, and provide them with the required support.
                 <li className="">Uninterrupted power supply system.</li>
             </ol>
             <div className="text-4xl my-2 text-center font-bold">Gallary</div>
-            <div className="grid grid-cols-2 w-full gap-5 my-4">
-                {img.map((i,index)=>{return (
-                  <div key={index} className="flex w-full md:w-2/3 mx-auto">
-                    <img src={i} alt=""/>
-                  </div>
-                )})}
+            <div className=" w-auto gap-5 flex justify-center items-center">
+                <PhotoSlider imgs={img}/>                
             </div>
             
         </div>
