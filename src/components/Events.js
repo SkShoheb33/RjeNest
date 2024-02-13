@@ -1,11 +1,15 @@
 import React from 'react'
 import Event from './Event';
+import img1 from '../assets/events-logos/iee.png'
+import img2 from '../assets/events-logos/acm.png'
+import img3 from '../assets/events-logos/iste.png'
 function Events() {
     let events = [
-        {name:'Webthon',topics:'HTML & CSS',organisation:'ISTE',mode:'Offline',time:'11:00 AM',venue:'Cyber block',desc:'This Webathon is conducted by IOT department in E-Learning.'},
-        {name:'Webthon',topics:'HTML & CSS',organisation:'ISTE',mode:'Offline',time:'11:00 AM',venue:'Cyber block',desc:'This Webathon is conducted by IOT department in E-Learning.'},
-        {name:'Webthon',topics:'HTML & CSS',organisation:'ISTE',mode:'Offline',time:'11:00 AM',venue:'Cyber block',desc:'This Webathon is conducted by IOT department in E-Learning.'}
+        {name:'Webthon',topics:'HTML & CSS',organisation:'ISTE',mode:'Offline',time:'11:00 AM',venue:'Cyber block',desc:'This Webathon is conducted by IOT department in E-Learning.',img:img1},
+        {name:'Webthon',topics:'HTML & CSS',organisation:'ISTE',mode:'Offline',time:'11:00 AM',venue:'Cyber block',desc:'This Webathon is conducted by IOT department in E-Learning.',img:img3},
+        {name:'Webthon',topics:'HTML & CSS',organisation:'ISTE',mode:'Offline',time:'11:00 AM',venue:'Cyber block',desc:'This Webathon is conducted by IOT department in E-Learning.',img:img2}
     ]
+
   return (
     <div className="flex flex-col items-center p-6 ">
             <div className=" text-xl md:text-2xl font-bold">Events</div>

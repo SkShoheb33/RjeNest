@@ -200,7 +200,7 @@ function Navbar() {
                 </div>
             </div>
         </div>
-        <div className='blue-gradient p-3 h-[5vh] text-center text-white flex justify-center items-center'>
+        <div className='blue-gradient p-1 md:p-3 text-[8px] md:text-[16px] text-center text-white flex justify-center items-center'>
             RVR & JCCE STP Foundation DST - NIDHI - iTBI Scheme Sponsored by 
             Department of Science and Technology, Govt. of India
                         & RVR & JC College of Engineering(A)

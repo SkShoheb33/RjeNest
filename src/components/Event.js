@@ -6,7 +6,10 @@ function Event(props) {
     Aos.init();
   },[]);
   return (
-    <div data-aos="zoom-in-right" data-aos-duration="1200" className="card hover:cursor-pointer my-2 flex flex-col w-full md:w-1/3">
+    <div data-aos="zoom-in-right" data-aos-duration="1200" className="card hover:cursor-pointer my-2 flex flex-col w-full md:w-1/3 justify-around">
+        <div className='flex justify-center p-3 items-center'>
+          <img src={props.event.img} alt={props.event.img} className='w-1/3'/>
+        </div>
         <div className="text-sm md:text-sm md:my-2 p-3">
             <div className="font-bold text-lg md:my-1 text-[#001F59]">{props.event.name}
                 <span>| {props.event.topics}</span>
