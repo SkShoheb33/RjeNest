@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import Aos from 'aos'
+import acm from '../assets/events-logos/acm.jpeg'
 import 'aos/dist/aos.css'
 function Event(props) {
   useEffect(()=>{
@@ -7,6 +8,9 @@ function Event(props) {
   },[]);
   return (
     <div data-aos="zoom-in-right" data-aos-duration="1200" className="card hover:cursor-pointer my-2 flex flex-col w-full md:w-1/3">
+        <div className='flex justify-center p-3'>
+          <img  src={props.event.img} alt='event image'/>
+        </div>
         <div className="text-sm md:text-sm md:my-2 p-3">
             <div className="font-bold text-lg md:my-1 text-[#001F59]">{props.event.name}
                 <span>| {props.event.topics}</span>

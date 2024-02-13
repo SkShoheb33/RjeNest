@@ -30,7 +30,7 @@ function Navbar() {
                 programmesItemVisible = false;
             }
             if (carrierItemVisible) {
-                document.getElementById('carriersItems').style.display = 'none'
+                document.getElementById('CareerItems').style.display = 'none'
                 carrierItemVisible = false;
             }
         }
@@ -47,8 +47,8 @@ function Navbar() {
             programmesItemVisible = !programmesItemVisible;
         })
         let carrierItemVisible = false;
-        document.getElementById('carriers').addEventListener('click', () => {
-            carrierItemVisible ? document.getElementById('carriersItems').style.display = 'none' : document.getElementById('carriersItems').style.display = 'flex';
+        document.getElementById('Career').addEventListener('click', () => {
+            carrierItemVisible ? document.getElementById('CareerItems').style.display = 'none' : document.getElementById('CareerItems').style.display = 'flex';
             closeAll();
             carrierItemVisible = !carrierItemVisible;
         })
@@ -60,7 +60,13 @@ function Navbar() {
     }
 
   return (
-    <div className='sticky top-0 z-10 flex flex-col-reverse'>
+    
+    <div className='sticky top-0 z-10 flex flex-col'>
+        <div className='blue-gradient p-4 h-[3vh] text-center text-[8px] md:text-lg  text-white flex justify-center items-center'>
+            RVR & JCCE STP Foundation DST - NIDHI - iTBI Scheme Sponsored by 
+            Department of Science and Technology, Govt. of India
+                        & RVR & JC College of Engineering(A)
+        </div>
         <div id="navbar" className=" bg-white flex justify-between md:justify-start w-full h-[12vh] items-center">
             <Link to="/" className=" flex items-center   md:mx-4 w-3/4 md:w-1/3 no-underline">
                 <div className="logo mx-2 w-[50px] h-[50px]  md:w-[65px] md:h-[65px]"></div>
@@ -81,7 +87,7 @@ function Navbar() {
                     </div>
                     <div className="b flex  absolute top-[10vh] w-[200px] p-3 rounded-sm text-sm flex-col font-normal bg-white">
                         <Link to="/programmes/rjenesstincubation" className="flex p-1 flex-col hover:cursor-pointer hover:bg-white hover:text-black rounded-sm hover:font-bold">
-                            RjeNest Incubation
+                            RJNest Incubation
                         </Link>
                         <Link to="/programmes/cyberspark" className="flex p-1 flex-col hover:cursor-pointer hover:bg-white hover:text-black rounded-sm hover:font-bold">
                             Cyber spark
@@ -103,7 +109,7 @@ function Navbar() {
                     </div>
                     <div className="b flex  absolute top-[10vh] w-[200px] p-3 rounded-sm text-sm flex-col font-normal bg-white">
                         <Link to="/about" className="flex p-1 flex-col hover:cursor-pointer hover:bg-white hover:text-black rounded-sm hover:font-bold">
-                            About RjeNest
+                            About RJ E-Nest
                         </Link>
                         <Link to="/about/directors" className="flex p-1 flex-col hover:cursor-pointer hover:bg-white hover:text-black rounded-sm hover:font-bold">
                             Board of Directors
@@ -121,14 +127,14 @@ function Navbar() {
                 </div>
                 <div className="a  h-full  flex w-1/6 relative flex-col justify-center ">
                     <div className="flex  c  justify-center hover:font-bold hover:cursor-pointer">
-                        CARRIERS
+                        CAREER
                     </div>
                     <div className="b flex absolute top-[10vh] w-[200px] p-3 rounded-sm text-sm flex-col font-normal bg-white">
-                        <Link to="/carriers" className="flex p-1 flex-col hover:cursor-pointer hover:bg-white hover:text-black rounded-sm hover:font-bold">
-                            Carriers at RjeNest
+                        <Link to="/Career" className="flex p-1 flex-col hover:cursor-pointer hover:bg-white hover:text-black rounded-sm hover:font-bold">
+                            Career at RJ E-Nest
                         </Link>
-                        <Link to="/carriers" className="flex p-1 flex-col hover:cursor-pointer  hover:bg-white hover:text-black rounded-sm hover:font-bold">
-                            Carriers at RjeNest Startups
+                        <Link to="/Career" className="flex p-1 flex-col hover:cursor-pointer  hover:bg-white hover:text-black rounded-sm hover:font-bold">
+                            Career at RJ E-Nest Startups
                         </Link>
 
                     </div>
@@ -140,7 +146,7 @@ function Navbar() {
                     CONNECT
                 </Link>
                 <div className='w-1/6'>
-                    <img className='w-1/2' src='https://pbs.twimg.com/profile_images/1379267817917194242/0li1iGtn_400x400.jpg' alt=''/>
+                    {/* <img className='w-1/2' src='https://pbs.twimg.com/profile_images/1379267817917194242/0li1iGtn_400x400.jpg' alt=''/> */}
                 </div>
             </div>
             {/*phone view*/}
@@ -177,10 +183,10 @@ function Navbar() {
                         </div>
                         <div className="flex tracking-widest justify-between w-full p-2 border-t-2">
                             <div className="flex flex-col w-full ">
-                                <div id="carriers">CARRIERS</div>
-                                <div id="carriersItems" className="flex flex-col leading-loose mt-3 w-full ">
-                                    <Link onClick={closeToggle} to="/carriers" className="navInnerItems tracking-widest bg-blue-900 text-white rounded-sm w-full px-2 py-1">Carriers at RjeNest</Link>
-                                    <Link onClick={closeToggle} to="/carriers" className="navInnerItems tracking-widest bg-blue-900 text-white rounded-sm w-full px-2 py-1">Carriers at RjeNest Startups</Link>
+                                <div id="Career">Career</div>
+                                <div id="CareerItems" className="flex flex-col leading-loose mt-3 w-full ">
+                                    <Link onClick={closeToggle} to="/Career" className="navInnerItems tracking-widest bg-blue-900 text-white rounded-sm w-full px-2 py-1">Career at RJ E-Nest</Link>
+                                    <Link onClick={closeToggle} to="/Career" className="navInnerItems tracking-widest bg-blue-900 text-white rounded-sm w-full px-2 py-1">Career at RJ E-Nest Startups</Link>
                                 </div>
                             </div>
                             <i className="fa-solid fa-caret-down"></i>
@@ -200,11 +206,7 @@ function Navbar() {
                 </div>
             </div>
         </div>
-        <div className='blue-gradient p-3 h-[5vh] text-center text-white flex justify-center items-center'>
-            RVR & JCCE STP Foundation DST - NIDHI - iTBI Scheme Sponsored by 
-            Department of Science and Technology, Govt. of India
-                        & RVR & JC College of Engineering(A)
-        </div>
+        
     </div>
   )
 }

@@ -8,11 +8,13 @@ import VisionMission from '../components/VisionMission'
 import Events from '../components/Events'
 import ControlledCarousel from '../components/ControlledCarousel'
 import About from '../components/About'
+import Sponsers from '../components/Sponsers'
 // import HomePartners from '../components/HomePartners'
 function Home() {
   return (
     <div className='flex flex-col'>
         <ControlledCarousel/>
+        <Sponsers/>
         <About/>
         <VisionMission/>
         <Impact/>
